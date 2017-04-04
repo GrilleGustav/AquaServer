@@ -146,6 +146,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\aquarium\aquarium\Controller.h" />
+    <ClInclude Include="..\..\aquarium\aquarium\TsensorModel.h" />
+    <ClInclude Include="..\..\aquarium\aquarium\TsensorView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\aquarium\aquarium\aquarium.cpp" />
+    <ClCompile Include="..\..\aquarium\aquarium\Controller.cpp" />
+    <ClCompile Include="..\..\aquarium\aquarium\TsensorModel.cpp" />
+    <ClCompile Include="..\..\aquarium\aquarium\TsensorsView.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
