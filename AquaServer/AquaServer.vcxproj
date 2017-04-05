@@ -18,6 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aquarium.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="TsensorModel.cpp" />
+    <ClCompile Include="TsensorsView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="TsensorModel.h" />
+    <ClInclude Include="TsensorView.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D89C4125-7FCE-4191-81AF-059E1DE0A7A8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -145,17 +156,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\aquarium\aquarium\Controller.h" />
-    <ClInclude Include="..\..\aquarium\aquarium\TsensorModel.h" />
-    <ClInclude Include="..\..\aquarium\aquarium\TsensorView.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\aquarium\aquarium\aquarium.cpp" />
-    <ClCompile Include="..\..\aquarium\aquarium\Controller.cpp" />
-    <ClCompile Include="..\..\aquarium\aquarium\TsensorModel.cpp" />
-    <ClCompile Include="..\..\aquarium\aquarium\TsensorsView.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
