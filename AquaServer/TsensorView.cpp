@@ -1,4 +1,5 @@
 #include "TsensorView.h"
+#include <newt.h>
 
 TsensorView::TsensorView(const char*)
 {
