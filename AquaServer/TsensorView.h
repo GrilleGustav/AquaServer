@@ -11,7 +11,7 @@ public:
 	~TsensorView();
 	
 private:
-	void mainMenue();
+	void mainMenue(void);
 	void temperature();
 
 };

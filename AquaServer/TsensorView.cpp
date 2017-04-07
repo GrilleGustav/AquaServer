@@ -18,7 +18,7 @@ TsensorView::~TsensorView()
 	
 }
 
-void TsensorView::mainMenue()
+void TsensorView::mainMenue(void)
 {
 	newtComponent menue1, form, listValue;
 	void * re;
@@ -47,7 +47,7 @@ void TsensorView::mainMenue()
 
 	switch (value)
 	{
-	case 1:
+		case 1:
 		cout << value;
 		break;
 	case 2:
