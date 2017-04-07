@@ -12,8 +12,8 @@ int main()
 {
 	TsensorModel tsensor("<DS18B20>");
 	TsensorView tview;
+	int  rc;
 	Controller tcontroller;
-	
 	tcontroller.controller(&tsensor, &tview);
 
 	return 0;

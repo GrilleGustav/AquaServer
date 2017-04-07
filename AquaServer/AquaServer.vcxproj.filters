@@ -24,7 +24,7 @@
     <ClCompile Include="TsensorModel.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="TsensorsView.cpp">
+    <ClCompile Include="TsensorView.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

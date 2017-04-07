@@ -6,10 +6,12 @@ using namespace std;
 class TsensorView
 {
 public:
-	TsensorView();
+	TsensorView(const char*);
 	~TsensorView();
 
 private:
+	void mainMenue();
+	void temperature();
 
 };
 #endif // !TSENSORVIEW_H

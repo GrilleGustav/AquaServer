@@ -18,7 +18,6 @@ public:
 
 private:
 	bool log = true;
-	string console();
 	bool exit = true;
 };
 #endif // !TSENSORCONTROLLER_H
