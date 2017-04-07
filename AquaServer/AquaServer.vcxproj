@@ -30,7 +30,7 @@
     <ClInclude Include="TsensorView.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="make.txt" />
+    <Text Include="make" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D89C4125-7FCE-4191-81AF-059E1DE0A7A8}</ProjectGuid>
