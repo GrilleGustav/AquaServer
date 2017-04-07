@@ -1,0 +1,13 @@
+VERSION = 3.02
+CC		= /usr/bin/gcc
+CFLAGS	= -std=c++11 -Wall
+LDFLAGS	= -lnewt
+NAME = AquaServer
+
+OBJ		= aquarium.o Controller.o TsensorModel.o TsensorView.o
+
+AquaServer: $(OBJ)
+				$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LDFLAGS)
+
+%.o: %.c
+		$(CC) $(LDFLAGS) -c $<
