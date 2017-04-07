@@ -9,11 +9,11 @@ public:
 	TsensorView(const char*);
 	TsensorView();
 	~TsensorView();
-	int mainMenue(void);
+	
 	
 private:
-	
-	int temperature();
+	void mainMenue(void);
+	void temperatureMenue();
 
 };
 #endif // !TSENSORVIEW_H

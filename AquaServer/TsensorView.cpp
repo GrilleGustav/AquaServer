@@ -10,7 +10,7 @@ TsensorView::TsensorView(const char*)
 
 TsensorView::TsensorView()
 {
-	newtFinished();
+	this->mainMenue();
 }
 
 TsensorView::~TsensorView()
@@ -18,7 +18,7 @@ TsensorView::~TsensorView()
 	
 }
 
-int TsensorView::mainMenue()
+void TsensorView::mainMenue()
 {
 	newtComponent mainMenue, form;
 	void * re;
@@ -38,5 +38,71 @@ int TsensorView::mainMenue()
 	value = reinterpret_cast<int>(re);
 	newtPopWindow();
 	newtFormDestroy(form);
-	return value;
+	switch (value)
+	{
+	case 1:
+		cout << "1";
+		break;
+	case 2:
+		cout << "2";
+		break;
+	case 3:
+		cout << "3";
+		break;
+	case 4:
+		newtFinished();
+		break;
+	default:
+		break;
+	}
+}
+void TsensorView::temperatureMenue()
+{
+	newtComponent temperatureMenue, form;
+	void * re;
+	int value;
+
+	newtCenteredWindow(40, 30, "AquaServer");
+	form = newtForm(NULL, NULL, 0);
+
+	temperatureMenue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
+	newtListboxAppendEntry(temperatureMenue, "Show Device Family", (void *)1);
+	newtListboxAppendEntry(temperatureMenue, "Show SensorIds", (void *)2);
+	newtListboxAppendEntry(temperatureMenue, "Get temperature", (void *)3);
+	newtListboxAppendEntry(temperatureMenue, "Set Alias", (void *)4);
+	newtListboxAppendEntry(temperatureMenue, "Change Sensor Id", (void *)5);
+	newtListboxAppendEntry(temperatureMenue, "Change Alias", (void *)6);
+	newtListboxAppendEntry(temperatureMenue, "Close", (void *)7);
+	newtFormAddComponents(form, temperatureMenue, NULL);
+	newtRunForm(form);
+	re = newtListboxGetCurrent(temperatureMenue);
+	value = reinterpret_cast<int>(re);
+	newtPopWindow();
+	newtFormDestroy(form);
+	switch (value)
+	{
+	case 1:
+		cout << "1";
+		break;
+	case 2:
+		cout << "2";
+		break;
+	case 3:
+		cout << "3";
+		break;
+	case 4:
+		cout << "3";
+		break;
+	case 5:
+		cout << "3";
+		break;
+	case 6:
+		cout << "3";
+		break;
+	case 7:
+		this->mainMenue();
+		break;
+	default:
+		break;
+	}
 }
