@@ -8,6 +8,11 @@ TsensorView::TsensorView(const char*)
 	this->mainMenue();
 }
 
+TsensorView::TsensorView()
+{
+
+}
+
 TsensorView::~TsensorView()
 {
 	

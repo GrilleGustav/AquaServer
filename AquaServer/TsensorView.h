@@ -7,6 +7,7 @@ class TsensorView
 {
 public:
 	TsensorView(const char*);
+	TsensorView();
 	~TsensorView();
 
 private:
