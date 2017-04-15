@@ -20,7 +20,7 @@ TsensorView::~TsensorView()
 
 void TsensorView::mainMenue()
 {
-	newtComponent mainMenue, form;
+	newtComponent Menue, form;
 	void * re;
 	int value;
 
@@ -28,13 +28,13 @@ void TsensorView::mainMenue()
 	form = newtForm(NULL, NULL, 0);
 
 	mainMenue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
-	newtListboxAppendEntry(mainMenue, "Temperature", (void *)1);
-	newtListboxAppendEntry(mainMenue, "Light", (void *)2);
-	newtListboxAppendEntry(mainMenue, "Ph-Wert", (void *)3);
-	newtListboxAppendEntry(mainMenue, "Close", (void *)4);
-	newtFormAddComponents(form, mainMenue, NULL);
+	newtListboxAppendEntry(Menue, "Temperature", (void *)1);
+	newtListboxAppendEntry(Menue, "Light", (void *)2);
+	newtListboxAppendEntry(Menue, "Ph-Wert", (void *)3);
+	newtListboxAppendEntry(Menue, "Close", (void *)4);
+	newtFormAddComponents(form, Menue, NULL);
 	newtRunForm(form);
-	re = newtListboxGetCurrent(mainMenue);
+	re = newtListboxGetCurrent(Menue);
 	value = reinterpret_cast<int>(re);
 	newtPopWindow();
 	newtFormDestroy(form);
@@ -58,7 +58,7 @@ void TsensorView::mainMenue()
 }
 void TsensorView::temperatureMenue()
 {
-	newtComponent temperatureMenue, form;
+	newtComponent Menue, form;
 	void * re;
 	int value;
 
@@ -66,16 +66,16 @@ void TsensorView::temperatureMenue()
 	form = newtForm(NULL, NULL, 0);
 
 	temperatureMenue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
-	newtListboxAppendEntry(temperatureMenue, "Show Device Family", (void *)1);
-	newtListboxAppendEntry(temperatureMenue, "Show SensorIds", (void *)2);
-	newtListboxAppendEntry(temperatureMenue, "Get temperature", (void *)3);
-	newtListboxAppendEntry(temperatureMenue, "Set Alias", (void *)4);
-	newtListboxAppendEntry(temperatureMenue, "Change Sensor Id", (void *)5);
-	newtListboxAppendEntry(temperatureMenue, "Change Alias", (void *)6);
-	newtListboxAppendEntry(temperatureMenue, "Close", (void *)7);
-	newtFormAddComponents(form, temperatureMenue, NULL);
+	newtListboxAppendEntry(Menue, "Show Device Family", (void *)1);
+	newtListboxAppendEntry(Menue, "Show SensorIds", (void *)2);
+	newtListboxAppendEntry(Menue, "Get temperature", (void *)3);
+	newtListboxAppendEntry(Menue, "Set Alias", (void *)4);
+	newtListboxAppendEntry(Menue, "Change Sensor Id", (void *)5);
+	newtListboxAppendEntry(Menue, "Change Alias", (void *)6);
+	newtListboxAppendEntry(Menue, "Close", (void *)7);
+	newtFormAddComponents(form, Menue, NULL);
 	newtRunForm(form);
-	re = newtListboxGetCurrent(temperatureMenue);
+	re = newtListboxGetCurrent(Menue);
 	value = reinterpret_cast<int>(re);
 	newtPopWindow();
 	newtFormDestroy(form);
