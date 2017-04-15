@@ -72,7 +72,7 @@ void TsensorView::temperatureMenue()
 	newtListboxAppendEntry(Menue, "Set Alias", (void *)4);
 	newtListboxAppendEntry(Menue, "Change Sensor Id", (void *)5);
 	newtListboxAppendEntry(Menue, "Change Alias", (void *)6);
-	newtListboxAppendEntry(Menue, "Close", (void *)7);
+	newtListboxAppendEntry(Menue, "Exit to main menue", (void *)7);
 	newtFormAddComponents(form, Menue, NULL);
 	newtRunForm(form);
 	re = newtListboxGetCurrent(Menue);
@@ -103,6 +103,7 @@ void TsensorView::temperatureMenue()
 		this->mainMenue();
 		break;
 	default:
+		cout << "default";
 		break;
 	}
 }
