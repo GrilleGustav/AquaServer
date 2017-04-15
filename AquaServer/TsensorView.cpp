@@ -27,7 +27,7 @@ void TsensorView::mainMenue()
 	newtCenteredWindow(40, 30, "AquaServer");
 	form = newtForm(NULL, NULL, 0);
 
-	mainMenue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
+	Menue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
 	newtListboxAppendEntry(Menue, "Temperature", (void *)1);
 	newtListboxAppendEntry(Menue, "Light", (void *)2);
 	newtListboxAppendEntry(Menue, "Ph-Wert", (void *)3);
@@ -65,7 +65,7 @@ void TsensorView::temperatureMenue()
 	newtCenteredWindow(40, 30, "AquaServer");
 	form = newtForm(NULL, NULL, 0);
 
-	temperatureMenue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
+	Menue = newtListbox(10, 1, 10, NEWT_FLAG_RETURNEXIT);
 	newtListboxAppendEntry(Menue, "Show Device Family", (void *)1);
 	newtListboxAppendEntry(Menue, "Show SensorIds", (void *)2);
 	newtListboxAppendEntry(Menue, "Get temperature", (void *)3);
